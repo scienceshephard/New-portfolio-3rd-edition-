@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 @import "tailwindcss";
-
 @theme{
     --nav-text-hover-color: #fea55f;
     --bg-color: #011627;
+    --font-handlee: "Handlee", cursive;
+    --shadow-homepage: 10px 0px 20px 0px #011627;
 }
 /* The animation code */
 @keyframes navbar-animation {
@@ -12,6 +14,7 @@
     50%  {transform: translateY(-70%);}
     75%  {transform: translateY(-50%);}
     100%  {transform: translateY(0%);}
+    /* 4%{color: #01162771;} */
   }
   
 .navbar-animated {
