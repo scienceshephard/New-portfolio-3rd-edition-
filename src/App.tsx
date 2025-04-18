@@ -5,8 +5,6 @@ import About from "./pages/About"
 import { Contact } from "./pages/Contact"
 import { NotFound } from "./pages/404"
 import Projects from "./pages/Projects"
-import { Main } from "./components/projects/MainProjects"
-import { AllProjects } from "./components/projects/AllProjects"
 
 function App() {
  
@@ -14,12 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<UserLayout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          
-          <Route path="projects" element={<Projects />}>
-            <Route path=":pid" element={<Main />} />
-            <Route path="" element={<AllProjects />} />
-          </Route>
+          <Route path="about" element={<About />} />          
+          <Route path="projects" element={<Projects />} />
 
           <Route path="contact" element={<Contact />} />
           

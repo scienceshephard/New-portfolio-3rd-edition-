@@ -1,25 +1,23 @@
-import { Link, Outlet } from 'react-router';
-import projectData from '../components/projects/projects_data.json';
+import data from '../components/projects/projects_data.json';
 
 const Projects = () => {
-
-  // const data= projectData.find( p=> p.title.toLowerCase().replace(/\s+/g, '-') === title)
+  
   return (
-    <section className="h-full flex ">
-      <ul>
-      {
-            projectData.map((data, index)=>{
-              const routeTitle = data.title.toLowerCase().replace(/\s+/g, '-');
-              return(
-                <li key={index} className="text-3xl text-white font-bold">
-                  <Link to={`/projects/${routeTitle}`} className="hover:text-[var(--nav-text-hover-color)] hover:duration-[10] hover:delay-[100] hover:ease-in-out">{data.title}</Link>
-                </li>
-              )
-            })
-          }
-      </ul>
-      <Outlet />
-    </section>
+    <main className="h-full">
+     <div className="flex flex-wrap w-[80%] mx-auto gap-[20px] h-full ">
+        {
+          data.map((projectData, index) =>{
+            return(
+              <div key={index} className=" ring-2 rounded-3xl py-[20px] px-[6px]  flex flex-col my-auto w-[30%] ">
+                <img src={projectData.image_source} alt={projectData.image_description} className="w-1/2 h-auto" />
+                <span className="text-left  font-bold">{projectData.title}</span>
+                <p className="text-lg">{projectData.about} <a href={projectData.project_link} target='_blank' className="text-blue-500">View Project</a></p>
+              </div>
+            )
+          })
+        }
+     </div>
+    </main>
   )
 }
 
