@@ -4,7 +4,7 @@ import { Footer } from './Footer'
 
 export const UserLayout = () => {
   return (
-    <div className='flex flex-col min-h-screen text-gray-600 font-bold font-mono bg-[var(--bg-color)]'>
+    <div className='flex flex-col h-screen text-gray-600 font-bold font-mono bg-[var(--bg-color)] transition-bg delay-75 duration-200'>
         <NavBar />
         <Outlet />
         <Footer />

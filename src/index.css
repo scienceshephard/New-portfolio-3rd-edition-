@@ -5,16 +5,19 @@
     --bg-color: #011627;
     --font-handlee: "Handlee", cursive;
     --shadow-homepage: 10px 0px 20px 0px #011627;
+    --animate-hometyping: hometyping 2s steps(20) alternate-reverse infinite;
+    
+    
+    @keyframes hometyping {
+        from{
+            text-shadow: 10px 5px 20px black;
+            width: 0ch;
+        }
+    }
 }
 /* The animation code */
 @keyframes navbar-animation {
-    0%   {transform: translateY(-200%);}
-    15%  {transform: translateY(-150%);}
-    25% {transform: translateY(-100%);}
-    50%  {transform: translateY(-70%);}
-    75%  {transform: translateY(-50%);}
-    100%  {transform: translateY(0%);}
-    /* 4%{color: #01162771;} */
+    from   {transform: translateY(-200%);}
   }
   
 .navbar-animated {
