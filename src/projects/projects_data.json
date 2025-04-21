@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Gadget Store",
+        "image_source": "",
+        "image_description":"ecm-site image",
+        "project_link":"ecm-site.onrender.com",
+        "about": "An ecommerce website built with Sprinboot and HTML5 AND CSS using Thymeleaf engine for the frontend. Payment gateway functional with list of dummy images of products from unsplash website."
+    },
+    {
+        "title": "Word Processor",
+        "image_source": "",
+        "image_description":"Word processor image",
+        "project_link":"www.example.com",
+        "about": "A desktop application built with Java Swing.It perfoms the same function of any word processor like Microsoft Word. The execution file is currentlyon my GitHub repo."
+    },
+    {
+        "title": "thank you",
+        "image_source": "",
+        "image_description":"alt text",
+        "project_link":"www.example.com",
+        "about": "A UI website built in react."
+    },
+    {
+        "title": "Music App",
+        "image_source": "",
+        "image_description":"alt text",
+        "project_link":"www.example.com",
+        "about": "A music web app built with React. Not done yet but coming soon."
+    }
+]
