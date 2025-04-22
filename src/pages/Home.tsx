@@ -8,7 +8,7 @@ export const Home = () => {
         <p className="text-amber-100 text-[20px] ">I am a software engineer.  Always ready to attend to your service.</p>
         <a href="/Opeyemi-Raphael-Ogbe-Resume.pdf" target="_blank" className="hover:text-[var(--nav-text-hover-color)] hover:duration-[10] hover:delay-[100] hover:ease-in-out "> My CV</a>
       </div>
-      <div className=" w-[400px] ml-3 h-[400px] overflow-hidden rounded-full shadow-homepage">
+      <div className=" ope-image w-[400px] ml-3 h-[400px] overflow-hidden rounded-full shadow-homepage">
         <img src="/Profile_Pic.jpg" alt="Opeyemi Ogbe Profile Picture"  className="w-full h-full object-cover"/>
       </div>
     </main>

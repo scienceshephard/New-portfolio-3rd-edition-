@@ -53,4 +53,14 @@
     .about{
         font-size: 18px;
     }
+    footer{
+
+        flex-wrap: wrap;
+        flex-direction: col;
+    }
+}
+@media screen and (width <= 500px){
+    .ope-image{
+        width: fit-content;
+    }
 }
